@@ -1,0 +1,40 @@
+*{cursor: crosshair;}
+
+
+.clock
+{float: right;
+
+  background-color:#000;
+border:   2px solid #fff;
+border-radius: 15px;
+box-shadow:10px 10px 5px grey;
+
+
+}
+.input-field
+{
+  border-radius: 25px;
+}
+
+
+.gradient {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+  border-radius:50px ;
+  cursor:crosshair;
+  box-shadow: 15px 15px 6px #aaaaaa;
+
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
