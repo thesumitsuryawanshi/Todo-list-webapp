@@ -1,4 +1,6 @@
 
+
+
 <div class="container text-center gradient ">
 
 
@@ -35,17 +37,17 @@
 
             <div *ngFor="let task of taskarray">
 
-                      <p class="fs-1">  {{task.title }}</p>
-                          <button class="btn btn-dark" type="button" name="button" (click)="deletetask(task.id)">Complete
+                      <p class="h2">  " {{task.title }}"</p>
+                      <button class="btn btn-outline-dark btn-sm mybtn" type="button" name="button" (click)="deletetask(task.id)">Complete
                           </button>
 
-array elements :{{taskarray_lngth}}
+                          <hr style="color:   white;  "> <br>
                 </div>
 
                 <br><br>
 
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: {{taskarray_lngth}}%;" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  <div class="progress-bar bg-success " role="progressbar" style="width: {{progress}}%; " aria-valuemin="0" aria-valuemax="100">{{progress}}</div>
                 </div>
 
 
@@ -56,3 +58,14 @@ array elements :{{taskarray_lngth}}
 
           </div>
 </div>
+
+
+
+
+<!----
+<h2>
+  array =={{taskarray | json}}
+array elements length :{{taskarray_lngth}}
+progress {{progress}}
+</h2>
+-->

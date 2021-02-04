@@ -37,10 +37,10 @@ public progress:number=0;
 
 
       this.objservice.getdata().subscribe(data=>this.taskarray=data);
-      //storing Observables data (fetched data from) to taskarray   where taskarray should be of type Task cause of  typecasting issues
+      //storing Observables data (fetched data from json) to taskarray   where taskarray should be of type Task cause of  typecasting issues
 
       this.newtitle='';      //clearing field
-      this.taskarray_lngth=this.taskarray.length;
+      this.taskarray_lngth=this.taskarray.length+1;
       this.progress=this.taskarray_lngth*10;
 
     }

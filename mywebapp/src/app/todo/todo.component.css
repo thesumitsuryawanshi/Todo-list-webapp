@@ -1,6 +1,25 @@
 *{cursor: crosshair;}
 
 
+.mybtn:hover {
+  position:relative;
+
+	animation: rotateAngle 3s ease infinite  both;
+  width:9%;
+
+}
+
+@keyframes rotateAngle {
+	33.33% {
+
+		transform: rotateY(30deg) rotateX(10deg);
+	}
+	66.66% {
+		transform: rotateY(-30deg) rotateX(10deg);
+	}
+
+
+}
 .clock
 {float: right;
 
