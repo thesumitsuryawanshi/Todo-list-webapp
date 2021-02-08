@@ -7,18 +7,30 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 
-//services & components
+//services & components & routes
 import { TaskService} from './services/task.service';
+
 import { TodoComponent } from './todo/todo.component';
+import { WPlaylistComponent } from './w-playlist/w-playlist.component';
+import { HomeComponent } from './home/home.component';
+
+import { AppRoutingModule,routingcomponents  } from './app-routing.module';
 
 
+
+  
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    routingcomponents,
+    WPlaylistComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule , FormsModule,HttpClientModule
+    BrowserModule , FormsModule,
+    HttpClientModule ,
+     AppRoutingModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]

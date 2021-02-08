@@ -1,6 +1,7 @@
 import { Task } from 'src/app/model/interface';
 import { TaskService} from '../services/task.service';
 import { Component, OnInit } from '@angular/core';
+import { AppRoutingModule,routingcomponents } from "../app-routing.module";
 
 
 
@@ -31,6 +32,7 @@ export class TodoComponent implements OnInit {
   public taskarray_lngth:number=0;
 public progress:number=0;
 
+constructor(private objservice:TaskService) { }
 
   ngOnInit(): void
   {
@@ -45,7 +47,6 @@ public progress:number=0;
 
     }
 
-    constructor(private objservice:TaskService) { }
 
 
     addtask()

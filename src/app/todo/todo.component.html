@@ -5,7 +5,7 @@
 
 
 
-                      <h1 class="pt-4" > Productivity Tracker<i class="fa fa-pencil  fa-lg" aria-hidden="true"></i></h1>
+                      <h1 class="pt-4" >Todays Task List <i class="fa fa-pencil  fa-lg" aria-hidden="true"></i></h1>
 
                       <div class="clock mb-5 p-3 text-success ">
                                       <span >
@@ -49,18 +49,23 @@
                 <div class="progress">
                   <div class="progress-bar bg-success " role="progressbar" style="width: {{progress}}%; " aria-valuemin="0" aria-valuemax="100">{{progress}}</div>
                 </div>
+                
+                
+                
+                <!-- so here data is rendering like [Object Object].
+                  but  when we specify the '| json'  here it means render data like a json file [key:value , key:value]   --->
+                  
+                </div>
+               
+                <h2 >-: Want  some Background Music :-</h2>
+                
+                        <a routerLink="/" >home</a> <br>
+                        <a routerLink="/wplaylist"  >Warriorplaylist </a>
+                
 
 
-
-
-                        <!-- so here data is rendering like [Object Object].
-                         but  when we specify the '| json'  here it means render data like a json file [key:value , key:value]   --->
-
-          </div>
+           
 </div>
-
-
-
 
 <!----
 <h2>
