@@ -15,6 +15,10 @@ import { WPlaylistComponent } from './w-playlist/w-playlist.component';
 import { HomeComponent } from './home/home.component';
 
 import { AppRoutingModule,routingcomponents  } from './app-routing.module';
+import { FlowStateComponent } from './flow-state/flow-state.component';
+import { EnergyPlaylistComponent } from './energy-playlist/energy-playlist.component';
+import { RelaxPlaylistComponent } from './relax-playlist/relax-playlist.component';
+import { EvolvingPlaylistComponent } from './evolving-playlist/evolving-playlist.component';
 
 
 
@@ -25,7 +29,11 @@ import { AppRoutingModule,routingcomponents  } from './app-routing.module';
     TodoComponent,
     routingcomponents,
     WPlaylistComponent,
-    HomeComponent
+    HomeComponent,
+    FlowStateComponent,
+    EnergyPlaylistComponent,
+    RelaxPlaylistComponent,
+    EvolvingPlaylistComponent
   ],
   imports: [
     BrowserModule , FormsModule,
