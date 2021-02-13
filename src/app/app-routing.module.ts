@@ -31,4 +31,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 
-export const routingcomponents = [];
+export const routingcomponents = [];    //optional 
