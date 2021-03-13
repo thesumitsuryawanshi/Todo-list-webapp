@@ -19,6 +19,7 @@ import { AppRoutingModule,routingcomponents } from "../app-routing.module";
 
 export class TodoComponent implements OnInit {
 
+  constructor(private objservice:TaskService) { }
 
 
 
@@ -28,11 +29,13 @@ export class TodoComponent implements OnInit {
 
 
   date: number = Date.now();
+
+
+
   public taskarray:Task[] =[];
   public taskarray_lngth:number=0;
-public progress:number=0;
+  public progress:number=0;
 
-constructor(private objservice:TaskService) { }
 
   ngOnInit(): void
   {

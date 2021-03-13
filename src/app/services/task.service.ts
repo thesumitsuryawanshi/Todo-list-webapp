@@ -16,18 +16,19 @@ export class TaskService {
 
 
 private URL:string="http://localhost:3000/tasks";
-// abv is link of   server created the same machine.
+// abv is link of   server created on the same machine.
 // for starting this server we need to install json server plugin and with correct file path execute "json-server --watch db.json"
 //now on abv link itll show  all data which lies in the db.json file.
 //it'll work like a real time Web server .
+//on port localhost:3000
 
 
   pushdata(data:Task):Observable<Task>
   {
 
 
-      return this.Objhttp.post<Task>(this.URL,data,
-        { headers: new HttpHeaders({'Content-Type': 'application/json'})  }       )
+      return this.Objhttp.post<Task>
+      (this.URL,data,  { headers: new HttpHeaders({'Content-Type': 'application/json'})  }       )
 
   }
 
