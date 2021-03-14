@@ -33,8 +33,6 @@ export class TodoComponent implements OnInit {
 
 
   public taskarray:Task[] =[];
-  public taskarray_lngth:number=0;
-  public progress:number=0;
 
 
   ngOnInit(): void
@@ -45,8 +43,6 @@ export class TodoComponent implements OnInit {
       //storing Observables data (fetched data from json) to taskarray   where taskarray should be of type Task cause of  typecasting issues
 
       this.newtitle='';      //clearing field
-      this.taskarray_lngth=this.taskarray.length+1;
-      this.progress=this.taskarray_lngth*10;
 
     }
 
@@ -69,7 +65,7 @@ export class TodoComponent implements OnInit {
                 {
 
                 this.objservice.deletetask(x)
-                .subscribe();                         //rem  brother untill you subscribe the CRUD methods they are not gonna work.
+                .subscribe();                         //rem  brother untill you subscribe the REST api operations they are not gonna work.
 
                 this.ngOnInit();
 
